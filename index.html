@@ -1,0 +1,126 @@
+<html>
+  <header>
+    <title>Gym Exercises Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </header>
+  <body>
+    <h1 id="title">Gym Exercises Survey Form</h1>
+    <p id="description">
+      This form will gather data on the most popular gym exercises
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"
+          >Enter Your Name:
+          <input
+            type="name"
+            id="name"
+            required
+            name="name"
+            placeholder="Enter your name here"
+          />
+        </label>
+        <label for="email" id="email-label"
+          >Enter Your Email:
+          <input
+            type="email"
+            id="email"
+            required
+            name="email"
+            placeholder="Enter your email here"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label"
+          >How many days a week do you train?
+          <input
+            type="number"
+            id="number"
+            min="0"
+            max="7"
+            required
+            name="days-per-week-trained"
+            placeholder="Enter days trained here"
+          />
+        </label>
+        <label for="dropdown" id="dropdown-label"
+          >What is your preferred muscle group to train?
+          <select id="dropdown" name="favorite-muscle-group">
+            <option>(select one)</option>
+            <option>Push</option>
+            <option>Pull</option>
+            <option>Legs</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you listen to music in the gym?</legend>
+        <label
+          ><input
+            type="radio"
+            name="music"
+            value="yes-music"
+            id="no-music"
+            class="inline"
+          />Yes</label
+        >
+        <label
+          ><input
+            id="no-music"
+            type="radio"
+            name="music"
+            value="no-music"
+            class="inline"
+          />No</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Which of the following supplements do you use?</legend>
+        <label for="protein-checkbox" id="protein-checkbox-label">
+          <input
+            type="checkbox"
+            id="protein-checkbox"
+            value="protein-checkbox"
+            class="inline"
+          />
+          Protein
+        </label>
+        <label for="creatine-checkbox" id="creatine-checkbox-label">
+          <input
+            type="checkbox"
+            id="creatine-checkbox"
+            value="creatine-checkbox"
+            class="inline"
+          />
+          Creatine
+        </label>
+        <label for="pre-workout-checkbox" id="pre-workout-checkbox-label">
+          <input
+            type="checkbox"
+            id="pre-workout-checkbox"
+            value="pre-workout-checkbox"
+            class="inline"
+          />
+          Pre-workout
+        </label>
+        <label for="none-checkbox" id="none-checkbox-label">
+          <input
+            type="checkbox"
+            id="none-checkbox"
+            value="none-checkbox"
+            class="inline"
+          />
+          None of the above
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Do you have any feedback for this survey?</legend>
+        <label>
+          <textarea>Please add a music recommendation prompt</textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
